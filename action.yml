@@ -12,7 +12,7 @@ outputs:
     description: The time we greeted you
 branding:
   icon: 'shield'
-  color: 'blue '
+  color: 'blue'
 runs:
   using: 'docker'
   image: 'Dockerfile'
