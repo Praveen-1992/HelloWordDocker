@@ -1,15 +1,15 @@
-name: 'Docker_Hello_word_Praveen_1814'
-description: 'Greet someone and record the time'
+name: Docker_Hello_word_Praveen_1814
+description: Greet someone and record the time
 author: Praveen
 
 inputs:
   who-to-greet:
-    description: 'Who to greet'
+    description: Who to greet
     required: true
-    default: 'word'
+    default: word
 outputs:
   time: 
-    description: 'The time we greeted you'
+    description: The time we greeted you
 branding:
   icon: 'shield'
   color: 'blue '
