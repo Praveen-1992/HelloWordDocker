@@ -1,0 +1,18 @@
+name: Smart
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Hello_word_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: My Docker Build Action_181992
+        uses: Praveen-1992/my-docker-app@v2
+       # Step 4: Build the Docker image
+      - name: Build Docker image and Run
+        run: |
+          docker build -t my-docker-app:latest .  
+          docker run my-alpine-app
