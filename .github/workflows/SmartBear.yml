@@ -32,6 +32,6 @@ jobs:
       # Step 6: Run the Docker image
       - name: Run Docker container
         run: |
-          docker run -d --name my-running-app ${{ secrets.DOCKER_USERNAME }}/my-docker-app:latest    
+          docker run -d --name my-running-app my-docker-app:latestt    
      
       
