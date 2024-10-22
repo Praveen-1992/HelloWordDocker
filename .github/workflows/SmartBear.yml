@@ -26,4 +26,4 @@ jobs:
       # Step 5: Run the Docker image
       - name: Run Docker container
         run: |
-          docker run -d chmod +x --name my-running-app my-docker-app:latest   
+          docker run -d --name my-docker-app my-docker-app:latest   
