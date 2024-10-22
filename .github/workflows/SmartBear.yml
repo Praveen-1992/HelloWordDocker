@@ -10,7 +10,7 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v4
       - name: My Docker Build Action_181992
-        uses: Praveen-1992/my-docker-app@v2
+        uses: Praveen-1992/my-docker-app@v3
      # Step 3: Log in to Docker Hub
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
