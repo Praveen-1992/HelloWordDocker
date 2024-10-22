@@ -1,0 +1,17 @@
+name: DockterCI
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Hello_word_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Docker_Hello_word_Praveen_1052
+        uses: Praveen-1992/DockerCustomAction@v1
+        with:
+          who-to-greet: 'welcome to Recator Happy'
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.ouput.time }}"
