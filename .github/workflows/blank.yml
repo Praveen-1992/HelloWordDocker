@@ -10,7 +10,7 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v4
       - name: Docker_Hello_word_Praveen_1052
-        uses: Praveen-1992/DockerCustomAction@v1
+        uses: Praveen-1992/DockerCustomAction@v2
         with:
           who-to-greet: 'welcome to Recator Happy'
       - name: Get the output time
