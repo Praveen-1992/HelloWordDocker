@@ -19,7 +19,11 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}  
         
        # Step 4: Build the Docker image
-      - name: Build Docker image and Run
+      - name: Build Docker image
         run: |
           docker build -t my-docker-app:latest .  
-         
+          
+      # Step 5: Run the Docker image
+      - name: Run Docker container
+        run: |
+          docker run -d --name my-running-app my-docker-app:latest   
